@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_text_size_dialog_title"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGray01"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            android:id="@+id/tvDetectionData"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detection Data Full Url"/>
+        <EditText
+            android:id="@+id/etIP"
+            android:layout_below="@+id/tvDetectionData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:background="@color/colorFragmentBackground"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter IP"
+            android:text="http://119.148.19.242"
+            android:inputType="text"
+            android:textSize="@dimen/dimen_text_size_dialog_item"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGray01"/>
+
+
+        <TextView
+            android:id="@+id/tvHomeData"
+            android:layout_below="@+id/etIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Data Base Url"/>
+        <EditText
+            android:id="@+id/etHomeApi"
+            android:layout_below="@+id/tvHomeData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:background="@color/colorFragmentBackground"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter IP"
+            android:text="http://119.148.19.242"
+            android:inputType="text"
+            android:textSize="@dimen/dimen_text_size_dialog_item"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGray01"/>
+
+        <LinearLayout
+            android:layout_below="@+id/etHomeApi"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorRed"
+                android:padding="10dp"
+                android:textSize="@dimen/dimen_text_size_dialog_title"
+                android:text="@string/action_submit"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_toEndOf="@+id/buttonCancelOrder"
+                android:layout_marginStart="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorGray03"
+                android:padding="10dp"
+                android:textSize="@dimen/dimen_text_size_dialog_title"
+                android:text="@string/action_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

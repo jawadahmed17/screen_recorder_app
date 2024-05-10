@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/colorGray03"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/gridIcon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridIcon"
+        android:padding="5dp"
+        android:text="Names"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/gridIcon" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:padding="5dp"
+        android:text="Total"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/gridIcon" />
+
+
+    <TextView
+        android:id="@+id/tvDetected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTotal"
+        android:padding="5dp"
+        android:text="Detected"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/gridIcon" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDetected"
+        android:padding="5dp"
+        android:text="Date"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/gridIcon" />
+
+</RelativeLayout>

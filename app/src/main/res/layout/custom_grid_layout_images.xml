@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Details"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_text_size_dialog_title"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGray01"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_below="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_below="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_text_size_dialog_title"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_below="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_text_size_dialog_title"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <LinearLayout
+            android:layout_below="@+id/textViewDate"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorRed"
+                android:padding="10dp"
+                android:textSize="@dimen/dimen_text_size_dialog_title"
+                android:text="OK"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
